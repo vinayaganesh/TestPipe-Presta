@@ -8,7 +8,7 @@ pipeline{
 
       steps {
           echo 'Build the application'
-        mvn install
+          bat 'mvn clean'
       }
       
      }
@@ -16,7 +16,7 @@ pipeline{
 
       steps {
           echo 'Test the application'
-        mvn test
+          bat 'mvn test'
       }
       
      }
@@ -24,7 +24,7 @@ pipeline{
 
       steps {
           echo 'Deploy the application'
-        mvn run
+          bat 'mvn run'
       }
       
      }
