@@ -8,6 +8,7 @@ pipeline{
 
       steps {
           echo 'Build the application'
+        mvn install
       }
       
      }
@@ -15,6 +16,7 @@ pipeline{
 
       steps {
           echo 'Test the application'
+        mvn test
       }
       
      }
@@ -22,6 +24,7 @@ pipeline{
 
       steps {
           echo 'Deploy the application'
+        mvn run
       }
       
      }
