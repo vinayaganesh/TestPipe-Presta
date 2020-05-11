@@ -24,7 +24,7 @@ pipeline{
 
       steps {
           echo 'Deploy the application'
-          bat 'mvn run'
+          bat 'mvn deploy'
       }
       
      }
